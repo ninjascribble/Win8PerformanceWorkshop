@@ -331,3 +331,34 @@ performance!
 - Load async
 - Defer property
 - Load necessary scripts in views
+
+### App launch workflow
+
+1. New host process
+2. Loading / Parsing HTML, CSS and JS
+3. "DOMContentLoaded" event
+4. Windows runtime "activated" event
+
+Goal is to get the app ready for user input in under 1.5 seconds.
+
+### Tuning the app launch
+
+- Rely upon packaged content and local data (don't make too many web requests).
+- Ensure that your images are pre-scaled. Don't do scaling in the browser.
+- Use static markup as much as possible.
+- Defer content; Load only what you need when you need it. ("pay for play").
+
+### Resource utilization tuning
+
+- Keep your DOM lightweight.
+- Release object references as soon as possible.
+- Optimize media content outside of your app.
+- Avoid circular references which prevent garbage collection.
+
+### Responsiveness tuning
+
+Apps are single-threaded. The UI thread _is_ the processing thread, so keep that
+in mind and avoid long-running processes.
+
+- Use async APIs.
+- Avoid large calculations.

@@ -1,7 +1,7 @@
 Windows 8 App Performance Workshop
 ==================================
 
-Presenter: Sharif Farag, Pricipal Group Program Manager
+Presenter: Sharif Farag, Principal Group Program Manager
 
 Agenda
 ------
